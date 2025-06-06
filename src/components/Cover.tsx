@@ -9,72 +9,72 @@ export function Cover() {
                 <h2>Portfolio</h2>
                 <p className="bg-black titoletto">Ho lavorato con:</p>
                 <div className="loghetti flex-wrap">
-                    <div class="inline-flex">
-                        <img width="" height="" alt="Adobe Illustrator" title="Adobe Illustrator" src={"@/images/loghetto-illustrator.png"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="Adobe Illustrator" title="Adobe Illustrator" src={"@/images/loghetto-illustrator.png"} />
                         <p>Adobe Illustrator</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="Adobe Photoshop" title="Adobe Photoshop" src={"@/images/loghetto-photoshop.png"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="Adobe Photoshop" title="Adobe Photoshop" src={"@/images/loghetto-photoshop.png"} />
                         <p>Adobe Photoshop</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="Html" title="Html" src={"@/images/loghetto-html.svg"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="Html" title="Html" src={"@/images/loghetto-html.svg"} />
                         <p>Html</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="Css" title="Css" src={"@/images/loghetto-css.svg"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="Css" title="Css" src={"@/images/loghetto-css.svg"} />
                         <p>Css</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="Javascript" title="Javascript" src={"@/images/loghetto-js.svg"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="Javascript" title="Javascript" src={"@/images/loghetto-js.svg"} />
                         <p>Javascript</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="Atom" title="Atom" src={"@/images/loghetto-atom.svg"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="Atom" title="Atom" src={"@/images/loghetto-atom.svg"} />
                         <p>Atom</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="Php" title="Php" src={"@/images/loghetto-php.svg"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="Php" title="Php" src={"@/images/loghetto-php.svg"} />
                         <p>Php</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="Vs Code" title="Vs Code" src={"@/images/loghetto-vscode.svg"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="Vs Code" title="Vs Code" src={"@/images/loghetto-vscode.svg"} />
                         <p>Vs Code</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="Affinity Design" title="Affinity Design" src={"@/images/loghetto-affinity.svg"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="Affinity Design" title="Affinity Design" src={"@/images/loghetto-affinity.svg"} />
                         <p>Affinity Design</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="Filmora" title="Filmora" src={"@/images/loghetto-filmora.png"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="Filmora" title="Filmora" src={"@/images/loghetto-filmora.png"} />
                         <p>Filmora</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="Chat Gpt" title="Chat Gpt" src={"@/images/loghetto-chatgpt.svg"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="Chat Gpt" title="Chat Gpt" src={"@/images/loghetto-chatgpt.svg"} />
                         <p>Chat Gpt</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="React" title="React" src={"@/images/"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="React" title="React" src={"@/images/"} />
                         <p>React</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="Next.Js" title="Next.Js" src={"@/images/"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="Next.Js" title="Next.Js" src={"@/images/"} />
                         <p>Next.Js</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="Git" title="Git" src={"@/images/"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="Git" title="Git" src={"@/images/"} />
                         <p>Git</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="GitHub" title="GitHub" src={"@/images/"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="GitHub" title="GitHub" src={"@/images/"} />
                         <p>GitHub</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="Tailwindcss" title="Tailwindcss" src={"@/images/"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="Tailwindcss" title="Tailwindcss" src={"@/images/"} />
                         <p>TailwindCss</p>
                     </div>
-                    <div class="inline-flex">
-                        <img width="" height="" alt="Bootstrap" title="Bootstrap" src={"@/images/"} />
+                    <div className="inline-flex">
+                        <img width="50" height="50" alt="Bootstrap" title="Bootstrap" src={"@/images/"} />
                         <p>Bootstrap</p>
                     </div>
                 </div>
