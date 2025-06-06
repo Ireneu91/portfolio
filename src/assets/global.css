@@ -1,3 +1,62 @@
 body {
-
+  --color1:#056766;
+  --color3: #1D1D1D;
+  --color-cta: #17BFBD;
+  --color-cta2: #D88C14;
+  font-family: 'Montserrat', sans-serif;
 }
+
+#fascia_azzurra { background-color:var(--color1);}
+
+#fascia_azzurra .foto_irene {
+    background-image: url("./images/foto-irene.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ #fascia_azzurra .colonna_destra {
+    padding-top: 50px;
+ }
+
+ #fascia_azzurra .colonna_destra .loghetti {
+    padding: 40px;
+ }
+
+ #fascia_azzurra .colonna_destra .loghetti img {
+   height: auto;
+ }
+
+ #fascia_azzurra h1 {
+  font-size: 27px;
+  font-weight: 300;
+  color: #FFF;
+  letter-spacing: 0.31em;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  text-align: center;
+  }
+
+ #fascia_azzurra h2 {
+  font-size: 57px;
+  font-weight: 300;
+  color: #FFF;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  text-align: center;
+  margin-bottom: 30px;
+  }
+
+#fascia_azzurra p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 2.4em;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  }
+
+#fascia_azzurra p.titoletto {
+  font-size: 17px;
+  line-height: 1em;
+  }
