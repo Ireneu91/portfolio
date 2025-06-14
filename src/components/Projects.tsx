@@ -1,6 +1,6 @@
 'use client'
 import LightGallery from 'lightgallery/react';
-import cn from 'classnames'
+
 
 // import styles
 import 'lightgallery/css/lightgallery.css';
@@ -11,7 +11,7 @@ import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import { useState } from 'react';
-import { AfterOpenDetail } from 'lightgallery/lg-events';
+import Image from 'next/image';
 
 
 export function Projects() {
@@ -51,7 +51,7 @@ export function Projects() {
                     plugins={[lgThumbnail, lgZoom]}
                 >
                     <div className='w-full group bg-cover bg-center h-[350px] flex box_portfolio' style={{backgroundImage: `url(${imagesList[0]})`}}>
-                        <img width="100" height="164" alt="logo" src={imagesList[1]} className="group-hover:block hidden absolute inset-y-[45%] inset-x-[50%]"></img>
+                        <Image width="100" height="164" alt="logo" src={imagesList[1]} className="group-hover:block hidden absolute inset-y-[45%] inset-x-[50%]"></Image>
        
                         <div className="didascalia mt-auto">
                             <div className='button'>
@@ -63,7 +63,7 @@ export function Projects() {
 
                     {isOpen[i] && imagesList.slice(3).map( (image,j) => (
                         <a key={j} href={image} ata-caption="<strong>Ecomax impianti</strong> - Lavora con noi" >
-                             <img alt="logo" src={image} />
+                             <Image width="200" height="200" alt="Anteprima" src={image} />
                         </a>
                     ))}
                 </LightGallery>
