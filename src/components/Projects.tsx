@@ -1,23 +1,74 @@
 'use client'
+import LightGallery from 'lightgallery/react';
+import cn from 'classnames'
+
+// import styles
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-thumbnail.css';
+
+// import plugins if you need
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgZoom from 'lightgallery/plugins/zoom';
+import { useState } from 'react';
+import { AfterOpenDetail } from 'lightgallery/lg-events';
+
 
 export function Projects() {
 
-    const projectsUrl: string[] = ['/img1.jpeg', '/img2'];
+    const projectsUrl: string[][] = [
+        ['/images/scuoleria2.png', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300'], 
+        ['/images/scuoleria2.png', '/images/logo.png', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300'],
+        ['https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300'],
+        ['https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300'],
+        ['https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300'],
+        ['https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300'],
+        ['https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300'],
+        ['https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300'],
+        ['https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300'],
 
-    //jsx
+    ];
+    const [isOpen, setIsOpen] = useState<boolean[]>([false, false]);
+
+    const onInit = () => {
+        console.log('init gallery')
+    }
+
+    const afterOpen = (index: number) => {
+        const copyIsOpen = [...isOpen];
+        copyIsOpen[index] = !copyIsOpen[index];
+        setIsOpen(copyIsOpen)
+    }
+
     return (
-        <section id="portfolio_irene_ucciero" className="grid grid-cols-3 xs:grid-cols-1">
-            {projectsUrl.map((src, i) => (
-                <div key={i}>
-                    <img src={src} alt={src}  />
-                    <img className="placeholder" width="6" height="4" alt="placeholder" src="@/images/svgs/placeholder6x4.svg"></img>
-                    <div className="cover"></div>
-                    <div className="button">
-                        <a title="Scopri il sito" href="https://sitoinanteprima.it/portfolio-irene/ecomax-impianti/" className="btn btn1">Scopri il sito</a>
-                        <a title="Guarda il layout" className="btn btn2" href="@/images/ecomax-home.webp" data-fancybox="sito_ecomax_impianti" data-caption="<strong>Ecomax impianti</strong> - Home">Guarda il layout</a>
+        <section id="portfolio_irene_ucciero" className="grid grid-cols-3 gap-10 xs:grid-cols-1">
+            {projectsUrl.map((imagesList, i) => (
+                <LightGallery
+                    key={i}
+                    onInit={onInit}
+                    onAfterOpen={() => afterOpen(i)}
+                    speed={500}
+                    plugins={[lgThumbnail, lgZoom]}
+                >
+                    <div className='w-full group bg-cover bg-center h-[350px] flex box_portfolio' style={{backgroundImage: `url(${imagesList[0]})`}}>
+                        <img width="100" height="164" alt="logo" src={imagesList[1]} className="group-hover:block hidden absolute inset-y-[45%] inset-x-[50%]"></img>
+       
+                        <div className="didascalia mt-auto">
+                            <div className='button'>
+                                <a title="Scopri il sito" href="https://sitoinanteprima.it/portfolio-irene/ecomax-impianti/" className="btn btn1">Scopri il sito</a>
+                                <a title="Guarda il layout" className="btn btn2" href={imagesList[2]} data-caption="<strong>Ecomax impianti</strong> - Home">Guarda il layout</a> 
+                            </div>
+                        </div>
                     </div>
-                </div>
+
+                    {isOpen[i] && imagesList.slice(3).map( (image,j) => (
+                        <a key={j} href={image} ata-caption="<strong>Ecomax impianti</strong> - Lavora con noi" >
+                             <img alt="logo" src={image} />
+                        </a>
+                    ))}
+                </LightGallery>
             ))}
         </section>
+        
     )
 }
