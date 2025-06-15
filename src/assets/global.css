@@ -23,11 +23,13 @@ body {
  }
 
  #fascia_azzurra .colonna_destra .loghetti {
-    padding: 40px;
+    padding: 20px;
  }
 
  #fascia_azzurra .colonna_destra .loghetti img {
    height: auto;
+   display: block;
+   margin: 0 auto 5px;
  }
 
  #fascia_azzurra h1 {
@@ -51,7 +53,7 @@ body {
   }
 
 #fascia_azzurra p {
-  font-size: 15px;
+  font-size: 11px;
   font-weight: 500;
   color: #FFF;
   text-align: center;
@@ -80,7 +82,7 @@ body {
 
 #portfolio_irene_ucciero .box_portfolio {
   width: 100%;
-
+  aspect-ratio: 6 / 4;
   margin: 15px auto;
   border-radius: 20px;
   border: 1px solid var(--color1);
