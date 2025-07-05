@@ -5,9 +5,8 @@
 import { projects } from './projectsData'
 import '../assets/css/jquery.fancybox.css'
 
-const isProduction = process.env.NEXT_NODE_ENV !== 'development' || true;
 export function Projects() {
-    console.log( process.env);
+    const isProduction = process.env.NEXT_PUBLIC_NODE_ENV !== 'development' || true;
 
     const generateImageLink = (img: string) => {
         if (isProduction) {

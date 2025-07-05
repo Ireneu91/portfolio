@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: process.env.NODE_ENV === 'production' ?  "/portfolio" : '',
   reactStrictMode: true,
+  publicRuntimeConfig: {
+    basePath: process.env.NEXT_PUBLIC_NODE_ENV === 'production' ? "/portfolio" : '',
+  },
 };
 
 export default nextConfig;
