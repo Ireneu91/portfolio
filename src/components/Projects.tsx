@@ -15,7 +15,7 @@ export function Projects() {
                 <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
                     {projects.map((project, idx) => (
                         <div key={idx}>
-                            <div className="box_portfolio" style={{ backgroundImage: `url(${project.coverimage})` }}>
+                            <div className="box_portfolio" style={{ backgroundImage: `url(${generateImageLink(project.coverimage)})` }}>
                                 <div className="cover"></div>
                                 <Image className="logo_cliente" alt="logo" src={project.clientLogo} />
                                 <div className="didascalia">
