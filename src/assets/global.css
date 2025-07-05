@@ -75,8 +75,8 @@ body {
   height: auto;
   overflow: hidden;
   position: relative;
-  padding: 70px 30px;
-  background-color: var(--color3);
+  padding: 40px 30px;
+  background-color: #1D1D1D;
   background-image: url("./images/svgs/pattern.svg");
   background-size: 22%;
 }

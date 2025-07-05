@@ -12,6 +12,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const generateImageLink = (img: string) => {
+  const basePath = process.env.NEXT_PUBLIC_NODE_ENV === 'development' ? "" : '/portfolio'
+    return `${basePath}${img}`;
+}
+
 export const metadata: Metadata = {
   title: "Irene",
   description: "Irene portfolio",
@@ -20,19 +25,19 @@ export const metadata: Metadata = {
     {
       sizes: "180x180",
       rel: "apple-touch-icon",
-      url: "/images/favicon/apple-icon-180x180.png"
+      url:  generateImageLink("/images/favicon/apple-icon-180x180.png")
     },
     {
       sizes: "32x32",
       rel: "icon",
       type: "image/png",
-      url: "/images/favicon/favicon-32x32.png"
+      url:  generateImageLink("/images/favicon/favicon-32x32.png")
     },
     {
       sizes: "16x16",
       rel: "icon",
       type: "image/png",
-      url: "/images/favicon/favicon-16x16.png"
+      url:  generateImageLink("/images/favicon/favicon-16x16.png")
     },
   ]
 };
