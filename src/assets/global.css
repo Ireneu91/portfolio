@@ -27,6 +27,7 @@ body {
  }
 
  #fascia_azzurra .colonna_destra .loghetti img {
+   width: 40px;
    height: auto;
    display: block;
    margin: 0 auto 5px;
