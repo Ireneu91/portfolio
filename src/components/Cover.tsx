@@ -12,7 +12,7 @@ export function Cover() {
                 <p className="bg-black titoletto">Ho lavorato con:</p>
                 <div className="loghetti flex-wrap">
                     <div className="loghetti inline-block">
-                        <Image width="200" height="200" alt="Adobe Illustrator" title="Adobe Illustrator" src={"/images/loghetto-illustrator.png"} />
+                        <Image width="200" height="200" alt="Adobe Illustrator" title="Adobe Illustrator" src="/images/loghetto-illustrator.png" />
                         <p>Adobe Illustrator</p>
                     </div>
                     <div className="loghetti inline-block">

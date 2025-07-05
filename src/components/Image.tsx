@@ -13,8 +13,6 @@ export const generateImageLink = (img: string) => {
     return img;
 }
 
-export const Image = (...props: any) => {
-    props.src = generateImageLink(props.src)
-
-    return <img {...props} />
+export const Image = (props: any) => {
+    return <img {...props} src={generateImageLink(props.src)} />
 }
