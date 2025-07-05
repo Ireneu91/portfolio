@@ -3,18 +3,11 @@
 // import plugins if you need
 
 import { projects } from './projectsData'
+import { generateImageLink, Image } from './Image';
 import '../assets/css/jquery.fancybox.css'
 
 export function Projects() {
-    const isProduction = process.env.NEXT_PUBLIC_NODE_ENV !== 'development' || true;
-
-    const generateImageLink = (img: string) => {
-        if (isProduction) {
-            return `/portfolio/${img}`;
-        }
-
-        return img;
-    }
+    
 
     return (
         <section id="portfolio_irene_ucciero">
@@ -24,7 +17,7 @@ export function Projects() {
                         <div key={idx}>
                             <div className="box_portfolio" style={{ backgroundImage: `url(${project.coverimage})` }}>
                                 <div className="cover"></div>
-                                <img className="logo_cliente" alt="logo" src={generateImageLink(project.clientLogo)} />
+                                <Image className="logo_cliente" alt="logo" src={project.clientLogo} />
                                 <div className="didascalia">
                                     <div className="button">
                                         <a title="Scopri il sito" href={project.clientLink} className="btn btn1">
