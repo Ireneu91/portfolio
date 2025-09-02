@@ -52,6 +52,10 @@ export function Cover() {
                         <p>Affinity Design</p>
                     </div>
                     <div className="loghetto inline-block">
+                        <Image width="200" height="200" alt="Figma" title="Figma" src={"/images/loghetto-figma.svg"} />
+                        <p>Figma</p>
+                    </div>
+                    <div className="loghetto inline-block">
                         <Image width="200" height="200" alt="Filmora" title="Filmora" src={"/images/loghetto-filmora.png"} />
                         <p>Filmora</p>
                     </div>
